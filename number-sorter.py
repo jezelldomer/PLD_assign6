@@ -17,3 +17,18 @@ def high_low(num1, num2, num3, num4):
             if num2 >= num4:
                 _numbers = [num1, num3, num2, num4]
                 print(f"The numbers are in the following order:{_numbers} ")
+        elif num4 >= num2:
+                _numbers = [num1, num3, num4, num2]
+                print(f"The numbers are in the following order:{_numbers} ")
+        elif num4 >= num2 and num4 >= num3:
+            if num3 >= num2:
+                _numbers = [num1, num4, num3, num2]
+                print(f"The numbers are in the following order:{_numbers} ")
+            elif num2 >= num3:
+                _numbers = [num1, num4, num2, num3]
+                print(f"The numbers are in the following order:{_numbers} ")
+    elif num2 >= num1 and num2 >= num3 and num2 >= num4:
+        if num1 >= num3 and num1 >= num4:
+            if num3 >= num4:
+                _numbers = [num2, num1, num3, num4]
+                print(f"The numbers are in the following order:{_numbers} ")
