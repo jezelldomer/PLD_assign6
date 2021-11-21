@@ -6,7 +6,7 @@ import random
 
 print (f"\033[1;36;40mGood day! There will be an \033[1;37;40m Addition Quiz \033[1;36;40mtoday. ")
 name = input("\033[1;35;40m  Please enter your name: ")
-print (f"\033[1;30;40m This is your 10 Item Quiz,\033[1;33;40m {name}.\033[1;30;40m Good Luck! ")
+print (f"\033[0;37;40mThis is your 10 Item Quiz,\033[1;33;40m {name}.\033[0;37;40m Good Luck! ")
 
 def addition():
     score = 0
@@ -40,5 +40,46 @@ def addition():
         print ("\033[1;32;40mYour Answer Is Correct! ")
     elif prog_ans_3 != user_ans_3:
         print (f"\033[1;37;40mYour Answer is  \033[1;31;40mWrong. \033[1;37;40mThe answer should be \033[1;31;40m{prog_ans_3}. ")
+    range4_1 = random.randint(0,99)
+    range4_2 = random.randint(0,99)
+    print ("\033[1;37;40m[ Item No. 4 ]")
+    print (f"\033[1;33;40m4. What is {range4_1} + {range4_2}? ")
+    user_ans_4 = int(input("\033[1;35;40mAnswer here: "))
+    prog_ans_4 = range4_1 + range4_2
+    if prog_ans_4 == user_ans_4:
+        print ("\033[1;32;40mYour Answer Is Correct! ")
+    elif prog_ans_4 != user_ans_4:
+        print (f"\033[1;37;40mYour Answer is  \033[1;31;40mWrong. \033[1;37;40mThe answer should be \033[1;31;40m{prog_ans_4}. ")
+    range5_1 = random.randint(0,99)
+    range5_2 = random.randint(0,99)
+    print ("\033[1;37;40m[ Item No. 5 ]")
+    print (f"\033[1;33;40m5. What is {range5_1} + {range5_2}? ")
+    user_ans_5 = int(input("\033[1;35;40mAnswer here: "))
+    prog_ans_5 = range5_1 + range5_2
+    if prog_ans_5 == user_ans_5:
+        print ("\033[1;32;40mYour Answer Is Correct! ")
+    elif prog_ans_5 != user_ans_5:
+        print (f"\033[1;37;40mYour Answer is  \033[1;31;40mWrong. \033[1;37;40mThe answer should be \033[1;31;40m{prog_ans_5}. ")
+    print ("\033[2;36;40mYou're Halfway there, you can do it! ")
+    range6_1 = random.randint(0,99)
+    range6_2 = random.randint(0,99)
+    print ("\033[1;37;40m[ Item No. 6 ]")
+    print (f"\033[1;33;40m6. What is {range6_1} + {range6_2}? ")
+    user_ans_6 = int(input("\033[1;35;40mAnswer here: "))
+    prog_ans_6 = range6_1 + range6_2
+    if prog_ans_6 == user_ans_6:
+        print ("\033[1;32;40mYour Answer Is Correct! ")
+    elif prog_ans_6 != user_ans_6:
+        print (f"\033[1;37;40mYour Answer is  \033[1;31;40mWrong. \033[1;37;40mThe answer should be \033[1;31;40m{prog_ans_6}. ")
+    range7_1 = random.randint(0,99)
+    range7_2 = random.randint(0,99)
+    print ("\033[1;37;40m[ Item No. 7 ]")
+    print (f"\033[1;33;40m7. What is {range7_1} + {range7_2}? ")
+    user_ans_7 = int(input("\033[1;35;40mAnswer here: "))
+    prog_ans_7 = range7_1 + range7_2
+    if prog_ans_7 == user_ans_7:
+        print ("\033[1;32;40mYour Answer Is Correct! ")
+    elif prog_ans_7 != user_ans_7:
+        print (f"\033[1;37;40mYour Answer is  \033[1;31;40mWrong. \033[1;37;40mThe answer should be \033[1;31;40m{prog_ans_7}. ")
 
 addition()
